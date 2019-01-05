@@ -19,7 +19,6 @@ body{
 */    
 header{
     border-bottom: 4px #eeeeee solid;
-    width: 100%;
     background-color: red;
 }
 nav{
@@ -31,9 +30,10 @@ nav > ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    padding:0;
 }
 nav > ul > li{
-    margin-left: 2rem;
+    margin-left: 1rem;margin-right: 1rem;
 }
 nav > ul > li > a {
     text-decoration: none;
@@ -65,11 +65,7 @@ nav > div > img#icon_linkedin {
         justify-content: center;
         align-items: center;
     }
-    nav > ul > li {
-        margin-left: 0.5rem;margin-right: 0.5rem;
-    }
 }
-
 /*
     Main
 */
