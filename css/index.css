@@ -18,6 +18,8 @@ body{
 */    
 header{
     border-bottom: 4px #eeeeee solid;
+    width: 100%;
+    background-color: red;
 }
 nav{
     display: flex;
@@ -49,9 +51,25 @@ nav > div > img#icon_linkedin {
     margin-right: 1rem;
 }
 
-/* 
-    Responsive header 
 /*
+    Responsive header --> Pris en compte pour écran avec largeur inférieure à 768px
+*/
+@media (max-width:768px){
+    header{
+        background-color: yellow;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav > ul > li {
+        margin-left: 0.5rem;margin-right: 0.5rem;
+    }
+    nav > div > img {
+        margin: auto;
+    }
+}
 
 /*
     Main
