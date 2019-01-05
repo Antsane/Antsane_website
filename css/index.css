@@ -14,7 +14,8 @@ body{
 }
 
 /*
-    Header
+    Headerd
+
 */    
 header{
     border-bottom: 4px #eeeeee solid;
@@ -62,12 +63,10 @@ nav > div > img#icon_linkedin {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     nav > ul > li {
         margin-left: 0.5rem;margin-right: 0.5rem;
-    }
-    nav > div > img {
-        margin: auto;
     }
 }
 
