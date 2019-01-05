@@ -1,0 +1,68 @@
+/*
+    General css
+*/
+body{
+    margin: 0;padding: 0; /*Full screen*/
+    font-family: "Century Gothic";
+}
+
+/*
+    Class + id used in Header
+*/
+.current {
+    font-style: italic;
+}
+
+/*
+    Header
+*/    
+header{
+    border-bottom: 4px #eeeeee solid;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+nav > ul > li{
+    margin-left: 2rem;
+}
+nav > ul > li > a {
+    text-decoration: none;
+}
+nav > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav > div > img {
+    margin-left: 2rem;
+}
+nav > div > img#icon_linkedin {
+    margin-right: 1rem;
+}
+
+/* 
+    Responsive header 
+/*
+
+/*
+    Main
+*/
+
+/* 
+    Responsive Main
+*/
+
+/*  
+    Footer
+*/
+
+/*
+    Responsive Footer
+*/
