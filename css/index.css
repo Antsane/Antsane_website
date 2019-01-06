@@ -91,7 +91,16 @@ main > div#slide_1 > p {
 /*
     Slide 2
 */
-
+main > div#slide_2 {
+    display: flex;
+    margin-right: 2rem;margin-left: 2rem;
+}
+main > div#slide_2 > img {
+    margin-right: 3rem;
+}
+/*
+    Slide 3
+*/
 /* 
     Responsive Main
 */
