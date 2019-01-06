@@ -14,12 +14,11 @@ body{
 }
 
 /*
-    Headerd
+    Header
 
 */    
 header{
     border-bottom: 4px #eeeeee solid;
-    background-color: red;
 }
 nav{
     display: flex;
@@ -56,9 +55,6 @@ nav > div > img#icon_linkedin {
     Responsive header --> Pris en compte pour écran avec largeur inférieure à 768px
 */
 @media (max-width:768px){
-    header{
-        background-color: yellow;
-    }
     nav{
         display: flex;
         flex-direction: column;
@@ -66,8 +62,34 @@ nav > div > img#icon_linkedin {
         align-items: center;
     }
 }
+
 /*
     Main
+*/
+/*
+    Slide 1
+*/
+main {
+    display: flex;
+    flex-direction: column;
+}
+main > div#slide_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px #eeeeee solid;
+}
+main > div#slide_1 > h1 {
+    font-size: 5rem;
+}
+main > div#slide_1 > p {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 2rem;
+}
+/*
+    Slide 2
 */
 
 /* 
