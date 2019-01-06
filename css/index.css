@@ -149,7 +149,16 @@ footer {
     justify-content: space-between;
 }
 footer > p {
-
+    margin-left: 2rem;
+}
+footer > div {
+    margin-right: 2rem;
+}
+footer > div#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /*
     Responsive Footer
