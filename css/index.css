@@ -93,14 +93,43 @@ main > div#slide_1 > p {
 */
 main > div#slide_2 {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-right: 2rem;margin-left: 2rem;
 }
 main > div#slide_2 > img {
     margin-right: 3rem;
 }
+
 /*
     Slide 3
 */
+main > div#slide_3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2rem;margin-left: 2rem;
+}
+main > div#slide_3 > img {
+    margin-left: 3rem;
+}
+
+/*
+    Slide 4
+*/
+main > div#slide_4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main > div#slide_4 > img {
+    margin-left: 2rem;
+}
+main > div#slide_4 > form {
+    display: flex;
+    flex-direction: column;
+}
 /* 
     Responsive Main
 */
