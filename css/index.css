@@ -8,11 +8,11 @@
     test
 */
 .triangle {
-
+    width: 0;
+    margin: 0 auto;
     border-left: 2em solid transparent;
     border-right: 2em solid transparent;
     border-top: 2em solid #EEEEEE;
-    transform: translate(0,100%);
 }
 
 
@@ -35,13 +35,17 @@ body{
     Header
 
 */    
-header{
-    border-bottom: 4px #eeeeee solid;
-}
+
 nav{
+    background: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 4px #eeeeee solid;
 }
 nav ul {
     list-style: none;
@@ -94,18 +98,22 @@ main {
     flex-direction: column;
 }
 main  div#slide_1 {
+    background-image:  url(../img/photo_slide1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    color: white;
     border-bottom: 4px #eeeeee solid;
 }
 main  div#slide_1  h1 {
     font-size: 5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-style: italic;
 }
 main  div#slide_1  p {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin: 0 10rem 10rem 10rem;
     font-size: 2rem;
     text-align: center;
 }
@@ -123,7 +131,8 @@ main  div#slide_2  img {
     margin-left: 2rem;
 }
 main  div#slide_2  p {
-    margin-right: 2rem;margin-left: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 /* 
     Slide 3
