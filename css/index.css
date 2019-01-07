@@ -9,8 +9,9 @@ body{
 /*
     Class + id used in Header
 */
-.current {
+.current > a{
     font-style: italic;
+    color: red;
 }
 
 /*
@@ -25,34 +26,34 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 }
-nav > ul {
+nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     padding:0;
 }
-nav > ul > li{
+nav ul li{
     margin-left: 1rem;margin-right: 1rem;
 }
-nav > ul > li > a {
+nav ul li  a {
     text-decoration: none;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.36);
 }
-nav > div {
+nav  ul  li {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-nav > div > img {
+nav  ul  li  img {
     margin-left: 2rem;
 }
-nav > div > img#icon_linkedin {
+nav  ul  li  img#icon_linkedin {
     margin-right: 1rem;
 }
 
 /*
-    Responsive header --> Pris en compte pour écran avec largeur inférieure à 768px
+    Responsive header -- Pris en compte pour écran avec largeur inférieure à 768px
 */
 @media (max-width:768px){
     nav{
@@ -73,17 +74,17 @@ main {
     display: flex;
     flex-direction: column;
 }
-main > div#slide_1 {
+main  div#slide_1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom: 4px #eeeeee solid;
 }
-main > div#slide_1 > h1 {
+main  div#slide_1  h1 {
     font-size: 5rem;
 }
-main > div#slide_1 > p {
+main  div#slide_1  p {
     margin-left: 10rem;
     margin-right: 10rem;
     font-size: 2rem;
@@ -91,47 +92,47 @@ main > div#slide_1 > p {
 /*
     Slide 2
 */
-main > div#slide_2 {
+main  div#slide_2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     border-bottom: 4px #eeeeee solid;
 }
-main > div#slide_2 > img {
+main  div#slide_2  img {
     margin-left: 2rem;
 }
-main > div#slide_2 > p {
+main  div#slide_2  p {
     margin-right: 2rem;margin-left: 2rem;
 }
 /* 
     Slide 3
 */
-main > div#slide_3 {
+main  div#slide_3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     border-bottom: 4px #eeeeee solid;
 }
-main > div#slide_3 > img {
+main  div#slide_3  img {
     margin-right: 2rem;
 }
-main > div#slide_3 > p {
+main  div#slide_3  p {
     margin-right: 2rem;margin-left: 2rem;
 }
 /*
     Slide 4
 */
-main > div#slide_4 {
+main  div#slide_4 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border-bottom: 4px #eeeeee solid;
 }
-main > div#slide_4 > img {
+main  div#slide_4  img {
     margin-left: 2rem;
 }
-main > div#slide_4 > form {
+main  div#slide_4  form {
     display: flex;
     flex-direction: column;
 }
@@ -140,17 +141,17 @@ main > div#slide_4 > form {
     Responsive Main Pris en compte pour écran avec largeur inférieure à 768px
 */
 @media (max-width:768px){
-    main > div#slide_1 > h1 {
+    main  div#slide_1  h1 {
         font-size: 2.5rem;
     }
-    main > div#slide_1 > p {
+    main  div#slide_1  p {
         margin-left: 2rem;margin-right: 2rem;
         font-size: 1rem;
     }
-    main > div#slide_2 {
+    main  div#slide_2 {
         flex-direction: column;
     }
-    main > div#slide_3 {
+    main  div#slide_3 {
         flex-direction: column;
     }
 }
@@ -162,13 +163,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 }
-footer > p {
+footer  p {
     margin-left: 2rem;
 }
-footer > div {
+footer  div {
     margin-right: 2rem;
 }
-footer > div#footer {
+footer  div#footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
