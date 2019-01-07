@@ -1,3 +1,9 @@
+/* 
+    git add --all
+    git commit -m "First Testbb "
+    git push -u
+*/
+
 /*
     General css
 */
@@ -10,8 +16,7 @@ body{
     Class + id used in Header
 */
 .current > a{
-    font-style: italic;
-    color: red;
+    color: rgba(0, 0, 0, 0.90);
 }
 
 /*
