@@ -83,6 +83,10 @@ nav  ul  li  img#icon_linkedin {
         justify-content: center;
         align-items: center;
     }
+    nav ul li{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }
 
 /*
@@ -124,8 +128,10 @@ main  div#slide_2 {
     background-color: white;
     border-bottom: 4px #eeeeee solid;
 }
-main div#slide_2 img_slide{
-
+main div#slide_2 div.img_slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main  div#slide_2  img {
     width: 20rem;
