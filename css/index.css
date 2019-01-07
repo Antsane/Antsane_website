@@ -5,6 +5,18 @@
 */
 
 /*
+    test
+*/
+.triangle {
+
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+    border-top: 2em solid #EEEEEE;
+    transform: translate(0,100%);
+}
+
+
+/*
     General css
 */
 body{
@@ -16,7 +28,7 @@ body{
     Class + id used in Header
 */
 .current > a{
-    color: rgba(0, 0, 0, 0.90);
+    color: rgba(0, 0, 0, 0.70);
 }
 
 /*
@@ -38,17 +50,19 @@ nav ul {
     padding:0;
 }
 nav ul li{
-    margin-left: 1rem;margin-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 nav ul li  a {
     text-decoration: none;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.36);
 }
-nav  ul  li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+nav ul li a:hover{
+    color: rgba(0, 0, 0, 0.70);
 }
 nav  ul  li  img {
     margin-left: 2rem;
@@ -58,7 +72,7 @@ nav  ul  li  img#icon_linkedin {
 }
 
 /*
-    Responsive header -- Pris en compte pour écran avec largeur inférieure à 768px
+    Responsive header -- Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
 */
 @media (max-width:768px){
     nav{
@@ -93,6 +107,7 @@ main  div#slide_1  p {
     margin-left: 10rem;
     margin-right: 10rem;
     font-size: 2rem;
+    text-align: center;
 }
 /*
     Slide 2
@@ -101,6 +116,7 @@ main  div#slide_2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: red;
     border-bottom: 4px #eeeeee solid;
 }
 main  div#slide_2  img {
@@ -143,7 +159,7 @@ main  div#slide_4  form {
 }
 
 /* 
-    Responsive Main Pris en compte pour écran avec largeur inférieure à 768px
+    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
 */
 @media (max-width:768px){
     main  div#slide_1  h1 {
