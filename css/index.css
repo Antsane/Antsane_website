@@ -1,20 +1,8 @@
 /* 
     git add --all
-    git commit -m "First Testbb "
+    git commit -m "First Test"
     git push -u
 */
-
-/*
-    test
-*/
-.triangle {
-    width: 0;
-    margin: 0 auto;
-    border-left: 2em solid transparent;
-    border-right: 2em solid transparent;
-    border-top: 2em solid #EEEEEE;
-}
-
 
 /*
     General css
@@ -110,7 +98,7 @@ main  div#slide_1 {
     border-bottom: 4px #eeeeee solid;
 }
 main  div#slide_1  h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-style: italic;
 }
@@ -126,7 +114,6 @@ main  div#slide_2 {
     flex-direction: row;
     align-items: stretch;
     background-color: white;
-    border-bottom: 4px #eeeeee solid;
 }
 main div#slide_2 div.img_slide{
     display: flex;
@@ -137,6 +124,13 @@ main  div#slide_2  img {
     margin-left: 2rem;
     width: 20rem;
     border-radius: 50%;
+}
+main div#slide_2 div#triangle_slide_2 {
+    width: 0;
+    margin: 0 auto;
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+    border-top: 2em solid #EEEEEE;
 }
 main  div#slide_2  p {
     margin: 2em 3em;
@@ -149,12 +143,25 @@ main  div#slide_2  p {
 main  div#slide_3 {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
+    background-color: #eeeeee;
+}
+main div#slide_3 div.img_slide{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #EEEEEE;
 }
 main  div#slide_3  img {
-    width: 10rem;
+    margin-left: 2rem;
+    width: 20rem;
     border-radius: 50%;
+}
+main div#slide_3 div#triangle_slide_3 {
+    width: 0;
+    margin: 0 auto;
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+    border-top: 2em solid white;
 }
 main  div#slide_3  p {
     margin: 2em 3em;
@@ -180,6 +187,7 @@ main  div#slide_4  form {
     flex-direction: column;
 }
 
+
 /* 
     Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
 */
@@ -195,7 +203,7 @@ main  div#slide_4  form {
         flex-direction: column;
     }
     main  div#slide_3 {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 /*  
