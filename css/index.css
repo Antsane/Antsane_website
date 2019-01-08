@@ -152,7 +152,7 @@ main div#slide_3 div.img_slide{
     align-items: center;
 }
 main  div#slide_3  img {
-    margin-left: 2rem;
+    margin-right: 2rem;
     width: 20rem;
     border-radius: 50%;
 }
