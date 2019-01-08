@@ -114,8 +114,10 @@ main  div#slide_2 {
     flex-direction: row;
     align-items: stretch;
     background-color: white;
+
 }
 main div#slide_2 div.img_slide{
+    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +135,7 @@ main div#slide_2 div#triangle_slide_2 {
     border-top: 2em solid #EEEEEE;
 }
 main  div#slide_2  p {
-    margin: 2em 3em;
+    margin: 7em 2em;
     text-align: center;
     font-size: 1.5em;
 }
@@ -145,14 +147,16 @@ main  div#slide_3 {
     flex-direction: row;
     align-items: stretch;
     background-color: #eeeeee;
+
 }
 main div#slide_3 div.img_slide{
+    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 main  div#slide_3  img {
-    margin-right: 2rem;
+    margin-left: 2rem;
     width: 20rem;
     border-radius: 50%;
 }
@@ -161,10 +165,10 @@ main div#slide_3 div#triangle_slide_3 {
     margin: 0 auto;
     border-left: 2em solid transparent;
     border-right: 2em solid transparent;
-    border-top: 2em solid white;
+    border-top: 2em solid White;
 }
 main  div#slide_3  p {
-    margin: 2em 3em;
+    margin: 7em 2em;
     text-align: center;
     font-size: 1.5em;
 }
@@ -179,7 +183,8 @@ main  div#slide_4 {
     background-color: white;
 }
 main  div#slide_4  img {
-    width: 10rem;
+    margin-left: 2rem;
+    width: 20rem;
     border-radius: 50%;
 }
 main  div#slide_4  form {
