@@ -190,7 +190,6 @@ main div#slide_4 div#img_and_form_slide {
     align-items: center;
     background-color:#eeeeee;
     border-radius: 50%;
-    
 }
 main  div#slide_4  img {
     width: 20rem;
@@ -228,12 +227,38 @@ main div#slide_4 form input:hover{
     main  div#slide_2 {
         flex-direction: column;
     }
+    main  div#slide_2  img {
+        width: 15rem;
+        margin-left: auto;margin-right: auto;
+    }
+    main  div#slide_2  p {
+        font-size: 1em;
+        margin-top: 1em;
+    }
     main  div#slide_3 {
         flex-direction: column-reverse;
     }
-    main div#slide_4 img{
-        width: 7em;
+    main  div#slide_3  img {
+        width: 15rem;
+        margin-left: auto;margin-right: auto;
     }
+    main  div#slide_3  p {
+        font-size: 1em;
+        margin-top: 1em;
+    }
+    main div#slide_4 div#img_and_form_slide{
+        flex-direction: column;
+    }
+    main  div#slide_4  img {
+        width: 15rem;
+        margin-left: auto;margin-right: auto;
+    }
+    main div#slide_4 form input{
+        font-size: 1em;
+        text-align: center;
+        margin: 0.5em 2em;
+    }
+    
 }
 /*  
     Footer
