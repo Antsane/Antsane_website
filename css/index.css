@@ -180,10 +180,19 @@ main  div#slide_4 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    overflow: hidden;
+}
+main div#slide_4 div#img_and_form_slide {
+    margin: 6em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:#eeeeee;
+    border-radius: 50%;
+    
 }
 main  div#slide_4  img {
-    margin-left: 2rem;
     width: 20rem;
     border-radius: 50%;
 }
@@ -191,6 +200,18 @@ main  div#slide_4  form {
     display: flex;
     flex-direction: column;
 }
+main div#slide_4 form input{
+    font-size: 2em;
+    border: none;
+    background-color: transparent;
+}
+main div#slide_4 form input:focus{
+    outline: none;
+}
+main div#slide_4 form input:hover{
+    background-color: #cccccc;
+}
+
 
 
 /* 
@@ -209,6 +230,9 @@ main  div#slide_4  form {
     }
     main  div#slide_3 {
         flex-direction: column-reverse;
+    }
+    main div#slide_4 img{
+        width: 7em;
     }
 }
 /*  
