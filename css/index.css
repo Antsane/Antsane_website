@@ -243,6 +243,12 @@ main div#slide_4 form textarea:hover{
     main  div#slide_4  img {
         width: 16rem;
     }
+    main div#slide_4 form textarea{
+        font-size: 1.2em;
+    }
+    main div#slide_4 form input{
+        font-size: 1.2em;
+    }
 }
 /* 
     Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
@@ -262,6 +268,12 @@ main div#slide_4 form textarea:hover{
     }
     main  div#slide_4  img {
         width: 14rem;
+    }
+    main div#slide_4 form textarea{
+        font-size: 1em;
+    }
+    main div#slide_4 form input{
+        font-size: 1em;
     }
 }
 
