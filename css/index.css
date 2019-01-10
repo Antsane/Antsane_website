@@ -97,10 +97,11 @@ nav  ul  li  img#icon_linkedin {
     nav ul {
         width: 100%;
         margin: 0;
+        padding: 1em 0 0 0;
     }
     nav ul > li{
         margin:0;
-        border-bottom: 1px #eeeeee solid;
+
     }
     nav ul > li:hover{
         background-color: #EEEEEE;
