@@ -102,8 +102,15 @@ nav  ul  li  img#icon_linkedin {
         margin:0;
         border-bottom: 1px #eeeeee solid;
     }
-    nav > ul:nth-child(2) {
-        display: none;
+    nav ul > li:hover{
+        background-color: #EEEEEE;
+    }
+    /*
+        find an other way to kick icon
+    */
+    nav ul li a i {
+        position: absolute;
+        visibility: hidden;
       }
     nav ul li a{
         margin: 0 auto;
@@ -112,6 +119,7 @@ nav  ul  li  img#icon_linkedin {
         display: none;
         text-align: center;
         border-bottom: 4px #eeeeee solid;
+        border-top: 1px #eeeeee solid;
     }
     .nav_mobile{
         width: 100%;
