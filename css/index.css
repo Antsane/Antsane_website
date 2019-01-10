@@ -82,26 +82,36 @@ nav  ul  li  img#icon_linkedin {
     Responsive header -- Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
 */
 @media (max-width:768px){
+    
+    /*
+        Menu mobile
+    
+    */
     nav{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    nav ul{
         
     }
-    nav ul li{
+    nav ul {
+        width: 100%;
+        margin: 0;
+    }
+    nav ul > li{
+        margin:0;
+        border-bottom: 1px #eeeeee solid;
+    }
+    nav > ul:nth-child(2) {
+        display: none;
+      }
+    nav ul li a{
         margin: 0 auto;
     } 
-
-    /*
-        Menu mobile
-    
-    */
     nav label{
         display: none;
         text-align: center;
+        border-bottom: 4px #eeeeee solid;
     }
     .nav_mobile{
         width: 100%;
@@ -323,7 +333,7 @@ main div#slide_4 form textarea:hover{
 */
 @media (max-width:768px){
     main  div#slide_1 {
-        margin-top: 6.7rem;
+        margin-top: 3.7rem;
     }
     main  div#slide_1  h1 {
         font-size: 2.5rem;
