@@ -7,7 +7,7 @@
 /*
     General css
 */
-body{
+html body{
     margin: 0;padding: 0; /*Full screen*/
     font-family: "Century Gothic";
 }
@@ -23,6 +23,24 @@ body{
     Header
 
 */ 
+
+/*
+    Nav mobile
+
+*/
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+/*
+    Nav PC
+
+*/
+nav input[type=checkbox]{
+    display:none;
+}
+nav label{
+    display: none;
+}
 nav{
     background: white;
     position: fixed;
@@ -70,9 +88,32 @@ nav  ul  li  img#icon_linkedin {
         justify-content: center;
         align-items: center;
     }
+    nav ul{
+        
+    }
     nav ul li{
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin: 0 auto;
+    } 
+
+    /*
+        Menu mobile
+    
+    */
+    nav label{
+        display: none;
+        text-align: center;
+    }
+    .nav_mobile{
+        width: 100%;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.70);
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 1em;
+    }
+    nav ul{
+        display: none;
     }
 }
 
