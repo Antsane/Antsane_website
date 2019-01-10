@@ -51,6 +51,7 @@ nav{
     border-bottom: 4px #eeeeee solid;
 }
 nav ul {
+    color: red;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -98,6 +99,7 @@ nav  ul  li  img#icon_linkedin {
         width: 100%;
         margin: 0;
         padding: 1em 0 0 0;
+
     }
     nav ul > li{
         margin:0;
@@ -120,7 +122,6 @@ nav  ul  li  img#icon_linkedin {
         display: none;
         text-align: center;
         border-bottom: 4px #eeeeee solid;
-        border-top: 1px #eeeeee solid;
     }
     .nav_mobile{
         width: 100%;
