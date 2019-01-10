@@ -137,6 +137,7 @@ main div#slide_2 div#triangle_slide_2 {
 main  div#slide_2  p {
     margin: 7em 2em;
     text-align: center;
+
     font-size: 1.5em;
 }
 /* 
@@ -216,7 +217,51 @@ main div#slide_4 form input:hover{
 /* 
     Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
 */
+@media (max-width:1062px){
+    main  div#slide_2  p {
+        font-size: 1.2em;
+    }
+    main  div#slide_2  img {
+        width: 16rem;
+    }
+    main  div#slide_3  p {
+        font-size: 1.2em;
+    }
+    main  div#slide_3  img {
+        width: 16rem;
+    }
+    main  div#slide_4  img {
+        width: 16rem;
+    }
+}
+/* 
+    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
+*/
+@media (max-width:862px){
+    main  div#slide_2  p {
+        font-size: 1em;
+    }
+    main  div#slide_2  img {
+        width: 14rem;
+    }
+    main  div#slide_3  p {
+        font-size: 1em;
+    }
+    main  div#slide_3  img {
+        width: 14rem;
+    }
+    main  div#slide_4  img {
+        width: 14rem;
+    }
+}
+
+/* 
+    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
+*/
 @media (max-width:768px){
+    main  div#slide_1 {
+        margin-top: 6.7rem;
+    }
     main  div#slide_1  h1 {
         font-size: 2.5rem;
     }
@@ -227,27 +272,38 @@ main div#slide_4 form input:hover{
     main  div#slide_2 {
         flex-direction: column;
     }
-    main  div#slide_2  img {
-        width: 15rem;
-        margin-left: auto;margin-right: auto;
+    main  div#slide_2  div.img_slide {
+        margin:0 auto;
+        padding-bottom: 0;
+    }
+    main div#slide_2 div#triangle_slide_2 {
+        visibility: hidden;
     }
     main  div#slide_2  p {
-        font-size: 1em;
-        margin-top: 1em;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+    main  div#slide_3  p {
+        margin-top: 0;
+        margin-bottom: 2em;
     }
     main  div#slide_3 {
         flex-direction: column-reverse;
     }
-    main  div#slide_3  img {
-        width: 15rem;
-        margin-left: auto;margin-right: auto;
+    main  div#slide_3  div.img_slide {
+        margin:0 auto;
+        padding-bottom: 0;
+    }
+    main div#slide_3 div#triangle_slide_3 {
+        visibility: hidden;
     }
     main  div#slide_3  p {
-        font-size: 1em;
-        margin-top: 1em;
+        margin-top: 0;
+        margin-bottom: 2em;
     }
     main div#slide_4 div#img_and_form_slide{
         flex-direction: column;
+        margin: 2em auto;
     }
     main  div#slide_4  img {
         width: 15rem;
@@ -304,7 +360,7 @@ footer div i {
     color: rgba(0, 0, 0, 0.36);
 }
 /* 
-    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
+    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  428px
 */
 @media (max-width:428px){
     footer  p {
