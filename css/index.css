@@ -201,9 +201,9 @@ main  div#slide_4  form {
     flex-direction: column;
 }
 main div#slide_4 form input{
-    font-size: 2em;
     border: none;
     background-color: transparent;
+    font: 1.5em Arial;
 }
 main div#slide_4 form input:focus{
     outline: none;
@@ -211,7 +211,17 @@ main div#slide_4 form input:focus{
 main div#slide_4 form input:hover{
     background-color: #cccccc;
 }
-
+main div#slide_4 form textarea{
+    border: none;
+    background-color: transparent;
+    font: 1.5em Arial;
+}
+main div#slide_4 form textarea:focus{
+    outline: none;
+}
+main div#slide_4 form textarea:hover{
+    background-color: #cccccc;
+}
 
 
 /* 
@@ -359,6 +369,10 @@ footer div i {
     font-weight: bold;
     color: rgba(0, 0, 0, 0.36);
 }
+footer div i:hover{
+    color: rgba(0, 0, 0, 0.70);
+}
+
 /* 
     Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  428px
 */
@@ -366,9 +380,8 @@ footer div i {
     footer  p {
         font-size: 0.8em;
     }
-    footer div#footer_nav2{
-
-        
+    footer div i{
+        font-size: 1em;
     }
 
 }
