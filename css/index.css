@@ -117,13 +117,13 @@ main  div#slide_2 {
 
 }
 main div#slide_2 div.img_slide{
-    margin: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 main  div#slide_2  img {
-    margin-left: 2rem;
     width: 20rem;
     border-radius: 50%;
 }
@@ -150,13 +150,13 @@ main  div#slide_3 {
 
 }
 main div#slide_3 div.img_slide{
-    margin: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 main  div#slide_3  img {
-    margin-left: 2rem;
     width: 20rem;
     border-radius: 50%;
 }
@@ -293,6 +293,7 @@ footer div#footer_nav2{
 }
 footer  p {
     margin:0;
+    text-align: center;
 }
 footer div i {
     bottom: 0;
@@ -301,4 +302,17 @@ footer div i {
     text-decoration: none;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.36);
+}
+/* 
+    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
+*/
+@media (max-width:428px){
+    footer  p {
+        font-size: 0.8em;
+    }
+    footer div#footer_nav2{
+
+        
+    }
+
 }
