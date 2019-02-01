@@ -1,28 +1,22 @@
-/* 
-    git add --all
-    git commit -m "First Test"
-    git push -u
-*/
-
-/*
-    General css
-*/
+/* ---------------------------------------------------------------------- *\
+                            Fixed General Style
+\* ---------------------------------------------------------------------- */
 html body{
     margin: 0;padding: 0; /*Full screen*/
     font-family: "Century Gothic";
 }
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
-/*
-    Class + id used in Header
-*/
 .current > a{
     color: rgba(0, 0, 0, 0.70);
 }
 
-/*
-    Header
-
-*/ 
+/* ---------------------------------------------------------------------- *\
+                            Fixed Header Style
+\* ---------------------------------------------------------------------- */
 
 /*
     Nav mobile
