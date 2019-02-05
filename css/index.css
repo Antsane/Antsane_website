@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    /*Full screen*/
     left: 0;
     right: 0;
     list-style: none;
@@ -73,31 +72,87 @@ header nav ul#nav_link li#current {
 main {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 0 0 20px 0;
 }
-main div.slide_to_slide_white,
-main div.slide_to_slide_grey {
+
+main div.slide_to_slide_white_background div.slide_to_slide_white,
+main div.slide_to_slide_grey_background div.slide_to_slide_grey {
+    width: 0;
     margin: 0 auto;
     border-left: 5vh solid transparent;
     border-right: 5vh solid transparent;
 }
-main div.slide_to_slide_grey {
-    border-top: 5vh  solid #EEEEEE;
+main div.slide_to_slide_grey_background div.slide_to_slide_grey {
+    border-top: 5vh solid #EEEEEE;
 }
-main div.slide_to_slide_white {
-    border-top: 5vh  solid white;
+main div.slide_to_slide_white_background div.slide_to_slide_white {
+    border-top: 5vh solid white;
+}
+
+main div.slide_to_slide_grey_background,
+main div.slide_to_slide_white_background {
+    padding: 0 0 40px 0;
+}
+main div.slide_to_slide_grey_background {
+    background-color: #fff;
+}
+main div.slide_to_slide_white_background{
+    background-color: #eeeeee;
+}
+
+
+/* ------------------------------------------------*\
+                    Main Slide Part
+\* ----------------------------------------------- */
+main div.slide {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
+    height: calc(100vh - 45px - 4px - 5vh - 40px);
+    justify-items: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+main img {
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: 50%;
+}
+
+main p {
+    text-align: justify;
+    font-size: 3vmin;
+}
+
+
+/* ---------------------------------------------------------------------- *\
+                            Responsive Main Style
+\* ---------------------------------------------------------------------- */
+@media (max-width: 1070px) {
+    main div.slide {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60%;
+    }
+
+    main div.img_slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    main img {
+        display: none;
+    }
 }
 
 /* ---------------------------------------------------------------------- *\
                             Fixed Main Slide 1 Style
 \* ---------------------------------------------------------------------- */
 main div#slide_1 {
-    display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-    height: calc(100vh - 45px - 4px - 5vh);
     background: no-repeat center / cover url(../img/photo_slide1.1.jpg);
     border-bottom: 4px #eeeeee solid;
+    margin: 0;
 }
 
 main div#slide_1 h1 {
@@ -110,80 +165,54 @@ main div#slide_1 h1 {
 
 main div#slide_1 p {
     align-self: start;
+    text-align: center;
     font-size: 5vmin;
     color: black;
 }
+
+/* ---------------------------------------------------------------------- *\
+                            Responsive Main Slide 1 Style
+\* ---------------------------------------------------------------------- */
+@media (max-width: 1070px) {
+    main div#slide_1 {
+        grid-template-rows: 40% 60%;
+    }
+}
+
 /* ---------------------------------------------------------------------- *\
                             Fixed Main Slide 2 Style
 \* ---------------------------------------------------------------------- */
-
 main div#slide_2 {
-    height: calc(100vh - 45px - 4px - 5vh);
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
     background-color: white;
+}
+
+/* ---------------------------------------------------------------------- *\
+                            Responsive Main Slide 2 Style
+\* ---------------------------------------------------------------------- */
+
+@media (max-width: 1070px) {
+    main div.slide div#img_slide_2 {
+        background: no-repeat center / cover url(../img/photo_slide2.jpg);
+    }
 
 }
 
-main div#slide_2 div.img_slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main div#slide_2 img {
-    width: 10%;
-}
-
-main div#slide_1 div#triangle_slide_2 {
-    margin: 0 auto;
-    border-left: 2em solid transparent;
-    border-right: 2em solid transparent;
-    border-top: 2em solid #EEEEEE;
-}
-
-main div#slide_2 p {
-    text-align: center;
-    margin-top: 100px;
-}
-
-/* 
-    Slide 3
-*/
+/* ---------------------------------------------------------------------- *\
+                            Fixed Main Slide 3 Style
+\* ---------------------------------------------------------------------- */
 main div#slide_3 {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    background-color: #eeeeee;
-
+    background-color: #EEEEEE;
 }
 
-main div#slide_3 div.img_slide {
-    margin-top: 2rem;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* ---------------------------------------------------------------------- *\
+                            Responsive Main Slide 3 Style
+\* ---------------------------------------------------------------------- */
 
-main div#slide_3 img {
-    width: 20rem;
-    border-radius: 50%;
-}
+@media (max-width: 1070px) {
+    main div.slide div#img_slide_3 {
+        background: no-repeat center / cover url(../img/photo_slide3.jpg);
+    }
 
-main div#slide_3 div#triangle_slide_3 {
-    width: 0;
-    margin: 0 auto;
-    border-left: 2em solid transparent;
-    border-right: 2em solid transparent;
-    border-top: 2em solid White;
-}
-
-main div#slide_3 p {
-    margin: 7em 2em;
-    text-align: center;
-    font-size: 1.5em;
 }
 
 /*
