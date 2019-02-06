@@ -9,6 +9,7 @@
     list-style: none;
     border: none;
     text-decoration: none;
+    outline: none;
     color: rgba(0, 0, 0, 0.5);
     font-family: "Century Gothic";
 }
@@ -72,7 +73,6 @@ header nav ul#nav_link li#current {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 0 20px 0;
 }
 
 main div.slide_to_slide_white_background div.slide_to_slide_white,
@@ -112,12 +112,11 @@ main div.slide {
     justify-items: center;
     align-items: center;
     padding: 0 40px;
+
 }
 
 main img {
     width: 50vmin;
-    height: 50vmin;
-    border-radius: 50%;
 }
 
 main p {
@@ -134,14 +133,8 @@ main p {
         grid-template-columns: 1fr;
         grid-template-rows: 40% 60%;
     }
-
-    main div.img_slide {
-        height: 100%;
-        width: 100%;
-    }
-
     main img {
-        display: none;
+        width: 34vmin;
     }
 }
 
@@ -150,6 +143,7 @@ main p {
 \* ---------------------------------------------------------------------- */
 main div#slide_1 {
     grid-template-columns: 1fr;
+    height: calc(100vh - 45px - 4px - 5vh);
     background: no-repeat center / cover url(../img/photo_slide1.1.jpg);
     border-bottom: 4px #eeeeee solid;
     margin: 0;
@@ -169,16 +163,6 @@ main div#slide_1 p {
     font-size: 5vmin;
     color: black;
 }
-
-/* ---------------------------------------------------------------------- *\
-                            Responsive Main Slide 1 Style
-\* ---------------------------------------------------------------------- */
-@media (max-width: 1070px) {
-    main div#slide_1 {
-        grid-template-rows: 40% 60%;
-    }
-}
-
 /* ---------------------------------------------------------------------- *\
                             Fixed Main Slide 2 Style
 \* ---------------------------------------------------------------------- */
@@ -186,92 +170,131 @@ main div#slide_2 {
     background-color: white;
 }
 
-/* ---------------------------------------------------------------------- *\
-                            Responsive Main Slide 2 Style
-\* ---------------------------------------------------------------------- */
-
-@media (max-width: 1070px) {
-    main div.slide div#img_slide_2 {
-        background: no-repeat center / cover url(../img/photo_slide2.jpg);
-    }
-
-}
 
 /* ---------------------------------------------------------------------- *\
                             Fixed Main Slide 3 Style
 \* ---------------------------------------------------------------------- */
 main div#slide_3 {
     background-color: #EEEEEE;
+    grid-template-columns: 2fr 1fr;
 }
-
+main div#slide_3 img {
+    grid-column: 2;
+    grid-row: 1;
+}
 /* ---------------------------------------------------------------------- *\
                             Responsive Main Slide 3 Style
 \* ---------------------------------------------------------------------- */
 
 @media (max-width: 1070px) {
-    main div.slide div#img_slide_3 {
-        background: no-repeat center / cover url(../img/photo_slide3.jpg);
+    main div#slide_3 {
+        grid-template-columns: 1fr;
     }
+    main div#slide_3 img {
+        grid-column: 1;
+    }
+}
+/* ---------------------------------------------------------------------- *\
+                            Fixed Main Slide 4 Style
+\* ---------------------------------------------------------------------- */
+main div#slide_4 {
+    grid-template-columns: 1fr 1fr;
 
 }
-
-/*
-    Slide 4
-*/
-main div#slide_4 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+main div#slide_4 div#iframe_map {
+    border-radius: 20px;
     overflow: hidden;
 }
-
-main div#slide_4 div#img_and_form_slide {
-    margin: 6em auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #eeeeee;
-    border-radius: 50%;
+main div#slide_4 iframe {
+    width: 400px; height: 400px;
 }
 
-main div#slide_4 img {
-    width: 20rem;
-    border-radius: 50%;
+main div#slide_4 div#center_form {
+    overflow: hidden;
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, .125);
+    border-radius: 20px;
+}
+
+main div#slide_4 div#title_form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font: 1em "Century Gothic";
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    background-color: rgb(241, 241, 241);
 }
 
 main div#slide_4 form {
     display: flex;
     flex-direction: column;
+    margin: 20px auto;
+    padding: 0 30px;
 }
 
-main div#slide_4 form input {
-    border: none;
-    background-color: transparent;
-    font: 1.5em Arial;
+main div#slide_4 form input,
+main div#slide_4 form select {
+    margin: 0 0 25px 0;
+    text-align: center;
+    text-align-last: center;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: white;
+    border-radius: 20px;
+    border: 0.5px solid rgba(0, 0, 0, .125);
+    box-shadow: 0px 2px 2px rgba(92, 136, 218, 0.25);
+    cursor: pointer;
+}
+main div#slide_4 form label#email-error{
+    color: rgb(148, 0, 0);
+    margin: 0 0 25px 0;
+}
+main div#slide_4 form label#password-error{
+    color: rgb(148, 0, 0);
+    margin: 0 0 25px 0;
+}
+main div#slide_4 form label#repassword-error{
+    color: rgb(148, 0, 0);
+    margin: 0 0 25px 0;
+}
+main div#slide_4 form input:invalid:focus{
+    border: 1px rgb(148, 0, 0);
 }
 
-main div#slide_4 form input:focus {
-    outline: none;
+
+main div#slide_4 form input,
+main div#slide_4 form select,
+main div#slide_4 form label {
+    font: 1em "Century Gothic";
+    width: 20em;
 }
 
-main div#slide_4 form input:hover {
-    background-color: #cccccc;
+main div#slide_4 form select option {
+    background-color: #eeeeee;
+    border-radius: 20px;
 }
 
-main div#slide_4 form textarea {
-    border: none;
-    background-color: transparent;
-    font: 1.5em Arial;
+main div#slide_4 form input[type=submit] {
+    padding: 0;
+    margin: 12px 0 0 0;
+    width: 50%;
+    background-color: rgba(92, 218, 176, 0.15);
 }
-
-main div#slide_4 form textarea:focus {
-    outline: none;
+main div#slide_4 form div.check_legality label,
+main div#slide_4 form div.check_legality input 
+{
+    margin: 0;
 }
-
-main div#slide_4 form textarea:hover {
-    background-color: #cccccc;
+main div#slide_4 form div.check_legality {
+    display: flex;
+    flex-direction: row;
+    margin: 12px 0;
+}
+main div#slide_4 form input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
 }
 
 /*  
