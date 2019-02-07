@@ -60,9 +60,9 @@ header nav ul#nav_social_network {
 /* ---------------------------------------------------------------------- *\
                             Animated Header Style
 \* ---------------------------------------------------------------------- */
-header nav ul#nav_link li:hover,
-header nav ul#nav_link li#current {
-    font-weight: bold;
+header nav ul#nav_link li a:hover,
+header nav ul#nav_link li a div#current {
+    color: black;
 }
 
 /* ---------------------------------------------------------------------- *\
@@ -112,11 +112,11 @@ main div.slide {
 
 }
 
-main img {
+main div.slide img {
     width: 50vmin;
 }
 
-main p {
+main div.slide p {
     text-align: justify;
     font-size: 3vmin;
 }
@@ -131,13 +131,13 @@ main p {
         grid-template-rows: 40% 60%;
         padding: 20px 20px 40px 20px;
     }
-    main img {
+    main div.slide img {
         width: 30vmin;
     }
 }
-@media (max-width: 500px) {
-    main p {
-        font-size: 3.5vmin;
+@media (max-width: 640px) {
+    main div.slide p {
+    font-size: 4vmin;
     }
 }
 
