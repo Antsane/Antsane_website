@@ -60,9 +60,9 @@ header nav ul#nav_social_network {
 /* ---------------------------------------------------------------------- *\
                             Animated Header Style
 \* ---------------------------------------------------------------------- */
-header nav ul#nav_link li:hover,
-header nav ul#nav_link li#current {
-    font-weight: bold;
+header nav ul#nav_link li a:hover,
+header nav ul#nav_link li a div#current {
+    color: black;
 }
 
 /* ---------------------------------------------------------------------- *\
