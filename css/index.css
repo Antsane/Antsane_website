@@ -249,6 +249,7 @@ main div#slide_4 form textarea::placeholder {
 
 main div#slide_4 form input[type=submit] {
     background-color: #eeeeee;
+    color: rgba(0, 0, 0, 0.4);
     width: 50%;
     justify-self: end;
 }
@@ -280,20 +281,93 @@ footer {
     grid-template-areas:
     "a b"
     "c c";
+    padding: 20px;
 }
-
+footer div.footer_communication{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+}
 footer div#footer_partner {
     justify-self: start;
     grid-area: a;
-
 }
 
-footer div#footer_communication {
+footer div#footer_social_network {
     justify-self: end;
     grid-area: b;
 }
+footer div#footer_social_network ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: stretch; 
+}
+footer div.footer_communication ul li{
+    display: grid;
+    background-color: #fff;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+footer div.footer_communication ul li:nth-child(-n+3){
+    border-right: 0px;
+}
+
 footer div#footer_legality {
     justify-self: center;
     grid-area: c;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 10px;
+}
+footer div#footer_legality ul {
+    display: flex;
+    flex-direction: row;
+}
+footer div#footer_legality ul li {
+    margin: 0 10px;
+}
+/* ---------------------------------------------------------------------- *\
+                            Animated Footer Style
+\* ---------------------------------------------------------------------- */
+footer div.footer_communication ul li a i#envelope:hover{
+    color: #0075c8;
+}
+footer div.footer_communication ul li a i#facebook:hover{
+    color: #1e4d9d;
+}
+footer div.footer_communication ul li a i#linkedin:hover{
+    color: #0077b5;
+}
+footer div.footer_communication ul li a i#marker:hover{
+    color: #ea4335;
+}
+footer div#footer_legality ul li a:hover {
+    color: black;
+}
+/* ---------------------------------------------------------------------- *\
+                            Responsive Footer Style
+\* ---------------------------------------------------------------------- */
+@media (max-width: 1000px){
+    footer {
+        grid-template-areas:
+        "a"
+        "b"
+        "c";
+        grid-row-gap: 10px;
+    }
+    footer div.footer_communication{
+        grid-row-gap: 0px;
+    }
+    footer div#footer_partner {
+        justify-self: center;
+    }
+    
+    footer div#footer_social_network {
+        justify-self: center;
+    }
 }
