@@ -146,7 +146,6 @@ main div.slide p {
 \* ---------------------------------------------------------------------- */
 main div#slide_1 {
     grid-template-columns: 1fr;
-    height: calc(100vh - 45px - 5vh - 4px - 60px);
     background: no-repeat center / cover url(../img/photo_slide1.1.jpg);
     border-bottom: 4px #eeeeee solid;
     margin: 0;
