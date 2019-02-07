@@ -108,7 +108,7 @@ main div.slide {
     height: calc(100vh - 45px - 4px - 5vh - 40px);
     justify-items: center;
     align-items: center;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 40px 20px;
 
 }
 
