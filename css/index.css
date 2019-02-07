@@ -1,459 +1,299 @@
 /* ---------------------------------------------------------------------- *\
                             Fixed General Style
 \* ---------------------------------------------------------------------- */
-html body{
-    margin: 0;padding: 0; /*Full screen*/
+* {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    resize: none;
+    color: rgba(0, 0, 0, 0.5);
     font-family: "Century Gothic";
 }
-body{
+
+body {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 100vw;
 }
 
-.current > a{
-    color: rgba(0, 0, 0, 0.70);
-}
 
 /* ---------------------------------------------------------------------- *\
                             Fixed Header Style
 \* ---------------------------------------------------------------------- */
+header {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 41px;
+    background-color: #fff;
+    border-bottom: 4px solid #eeeeee;
+}
 
-/*
-    Nav mobile
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
 
-*/
-nav input[type=checkbox]:checked ~ ul{
-    display: block;
+header nav ul#nav_link {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    place-items: center;
 }
-/*
-    Nav PC
 
-*/
-nav input[type=checkbox]{
-    display:none;
+header nav ul#nav_social_network {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    place-items: center;
 }
-nav label{
-    display: none;
-}
-nav{
-    background: white;
-    position: fixed;
-    left: 0;right: 0;top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 4px #eeeeee solid;
-}
-nav ul {
-    color: red;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding:0;
-}
-nav ul li{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-nav ul li  a {
-    text-decoration: none;
+
+/* ---------------------------------------------------------------------- *\
+                            Animated Header Style
+\* ---------------------------------------------------------------------- */
+header nav ul#nav_link li:hover,
+header nav ul#nav_link li#current {
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.36);
-}
-nav ul li a:hover{
-    color: rgba(0, 0, 0, 0.70);
-}
-nav  ul  li  img {
-    margin-left: 2rem;
-}
-nav  ul  li  img#icon_linkedin {
-    margin-right: 1rem;
 }
 
-/*
-    Responsive header -- Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
-*/
-@media (max-width:768px){
-    
-    /*
-        Menu mobile
-    
-    */
-    nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    nav ul {
-        width: 100%;
-        margin: 0;
-        padding: 1em 0 0 0;
-
-    }
-    nav ul > li{
-        margin:0;
-
-    }
-    nav ul > li:hover{
-        background-color: #EEEEEE;
-    }
-    /*
-        find an other way to kick icon
-    */
-    nav ul li a i {
-        position: absolute;
-        visibility: hidden;
-      }
-    nav ul li a{
-        margin: 0 auto;
-    } 
-    nav label{
-        display: none;
-        text-align: center;
-        border-bottom: 4px #eeeeee solid;
-    }
-    .nav_mobile{
-        width: 100%;
-        font-weight: bold;
-        color: rgba(0, 0, 0, 0.70);
-        display: block;
-        text-align: center;
-        margin: 0;
-        padding: 1em;
-    }
-    nav ul{
-        display: none;
-    }
-}
-
-/*
-    Main
-*/
-/*
-    Slide 1
-*/
+/* ---------------------------------------------------------------------- *\
+                            Responsive Header Style
+\* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- *\
+                            Fixed Main Style
+\* ---------------------------------------------------------------------- */
 main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
 }
-main  div#slide_1 {
-    display: flex;
-    background: no-repeat center / cover url(../img/photo_slide1.1.jpg);
-    flex-direction: column;
-    align-items: center;
-    padding: 4em 2em;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    border-bottom: 4px #eeeeee solid;
-    margin-top: 3.4rem;
-}
-main  div#slide_1  h1 {
-    font-size: 6rem;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-style: italic;
-}
-main  div#slide_1  p {
-    font-size: 3rem;
-    text-align: center;
-}
-/*
-    Slide 2
-*/
-main  div#slide_2 {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    background-color: white;
 
-}
-main div#slide_2 div.img_slide{
-    margin-top: 2rem;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-main  div#slide_2  img {
-    width: 20rem;
-    border-radius: 50%;
-}
-main div#slide_2 div#triangle_slide_2 {
+main div.slide_to_slide_white_background div.slide_to_slide_white,
+main div.slide_to_slide_grey_background div.slide_to_slide_grey {
     width: 0;
     margin: 0 auto;
-    border-left: 2em solid transparent;
-    border-right: 2em solid transparent;
-    border-top: 2em solid #EEEEEE;
+    border-left: 5vh solid transparent;
+    border-right: 5vh solid transparent;
 }
-main  div#slide_2  p {
-    margin: 7em 2em;
-    text-align: center;
-
-    font-size: 1.5em;
+main div.slide_to_slide_grey_background div.slide_to_slide_grey {
+    border-top: 5vh solid #EEEEEE;
 }
-/* 
-    Slide 3
-*/
-main  div#slide_3 {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+main div.slide_to_slide_white_background div.slide_to_slide_white {
+    border-top: 5vh solid white;
+}
+main div.slide_to_slide_grey_background {
+    background-color: #fff;
+}
+main div.slide_to_slide_white_background{
     background-color: #eeeeee;
-
-}
-main div#slide_3 div.img_slide{
-    margin-top: 2rem;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-main  div#slide_3  img {
-    width: 20rem;
-    border-radius: 50%;
-}
-main div#slide_3 div#triangle_slide_3 {
-    width: 0;
-    margin: 0 auto;
-    border-left: 2em solid transparent;
-    border-right: 2em solid transparent;
-    border-top: 2em solid White;
-}
-main  div#slide_3  p {
-    margin: 7em 2em;
-    text-align: center;
-    font-size: 1.5em;
-}
-/*
-    Slide 4
-*/
-main  div#slide_4 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-main div#slide_4 div#img_and_form_slide {
-    margin: 6em auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color:#eeeeee;
-    border-radius: 50%;
-}
-main  div#slide_4  img {
-    width: 20rem;
-    border-radius: 50%;
-}
-main  div#slide_4  form {
-    display: flex;
-    flex-direction: column;
-}
-main div#slide_4 form input{
-    border: none;
-    background-color: transparent;
-    font: 1.5em Arial;
-}
-main div#slide_4 form input:focus{
-    outline: none;
-}
-main div#slide_4 form input:hover{
-    background-color: #cccccc;
-}
-main div#slide_4 form textarea{
-    border: none;
-    background-color: transparent;
-    font: 1.5em Arial;
-}
-main div#slide_4 form textarea:focus{
-    outline: none;
-}
-main div#slide_4 form textarea:hover{
-    background-color: #cccccc;
 }
 
 
-/* 
-    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
-*/
-@media (max-width:1062px){
-    main  div#slide_2  p {
-        font-size: 1.2em;
+/* ------------------------------------------------*\
+                    Main Slide Part
+\* ----------------------------------------------- */
+main div.slide {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
+    height: calc(100vh - 45px - 4px - 5vh - 40px);
+    justify-items: center;
+    align-items: center;
+    padding: 20px 20px 20px 40px;
+
+}
+
+main img {
+    width: 50vmin;
+}
+
+main p {
+    text-align: justify;
+    font-size: 3vmin;
+}
+
+
+/* ---------------------------------------------------------------------- *\
+                            Responsive Main Style
+\* ---------------------------------------------------------------------- */
+@media (max-width: 1070px) {
+    main div.slide {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60%;
+        padding: 20px 20px 40px 20px;
     }
-    main  div#slide_2  img {
-        width: 16rem;
-    }
-    main  div#slide_3  p {
-        font-size: 1.2em;
-    }
-    main  div#slide_3  img {
-        width: 16rem;
-    }
-    main  div#slide_4  img {
-        width: 16rem;
-    }
-    main div#slide_4 form textarea{
-        font-size: 1.2em;
-    }
-    main div#slide_4 form input{
-        font-size: 1.2em;
+    main img {
+        width: 30vmin;
     }
 }
-/* 
-    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
-*/
-@media (max-width:862px){
-    main  div#slide_2  p {
-        font-size: 1em;
-    }
-    main  div#slide_2  img {
-        width: 14rem;
-    }
-    main  div#slide_3  p {
-        font-size: 1em;
-    }
-    main  div#slide_3  img {
-        width: 14rem;
-    }
-    main  div#slide_4  img {
-        width: 14rem;
-    }
-    main div#slide_4 form textarea{
-        font-size: 1em;
-    }
-    main div#slide_4 form input{
-        font-size: 1em;
+@media (max-width: 500px) {
+    main p {
+        font-size: 3.5vmin;
     }
 }
 
-/* 
-    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  768px
-*/
-@media (max-width:768px){
-    main  div#slide_1 {
-        margin-top: 3.7rem;
-    }
-    main  div#slide_1  h1 {
-        font-size: 2.5rem;
-    }
-    main  div#slide_1  p {
-        margin-left: 2rem;margin-right: 2rem;
-        font-size: 1rem;
-    }
-    main  div#slide_2 {
-        flex-direction: column;
-    }
-    main  div#slide_2  div.img_slide {
-        margin:0 auto;
-        padding-bottom: 0;
-    }
-    main div#slide_2 div#triangle_slide_2 {
-        visibility: hidden;
-    }
-    main  div#slide_2  p {
-        margin-top: 0;
-        margin-bottom: 2em;
-    }
-    main  div#slide_3  p {
-        margin-top: 0;
-        margin-bottom: 2em;
-    }
-    main  div#slide_3 {
-        flex-direction: column-reverse;
-    }
-    main  div#slide_3  div.img_slide {
-        margin:0 auto;
-        padding-bottom: 0;
-    }
-    main div#slide_3 div#triangle_slide_3 {
-        visibility: hidden;
-    }
-    main  div#slide_3  p {
-        margin-top: 0;
-        margin-bottom: 2em;
-    }
-    main div#slide_4 div#img_and_form_slide{
-        flex-direction: column;
-        margin: 2em auto;
-    }
-    main  div#slide_4  img {
-        width: 15rem;
-        margin-left: auto;margin-right: auto;
-    }
-    main div#slide_4 form input{
-        font-size: 1em;
-        text-align: center;
-        margin: 0.5em 2em;
-    }
-    main div#slide_4 form textarea{
-        font-size: 1em;
-        text-align: center;
-        margin: 0.5em 2em;
-    }
-    
-}
-/*  
-    Footer
-*/
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding : 2em 0 1em 0;
-    background-color: #EEEEEE;
-}
-footer div#footer_1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;
-}
-footer  div#footer_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2rem;
-}
-footer div#footer_nav2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+/* ---------------------------------------------------------------------- *\
+                            Fixed Main Slide 1 Style
+\* ---------------------------------------------------------------------- */
+main div#slide_1 {
+    grid-template-columns: 1fr;
+    height: calc(100vh - 45px - 4px - 5vh - 60px);
+    background: no-repeat center / cover url(../img/photo_slide1.1.jpg);
+    border-bottom: 4px #eeeeee solid;
     margin: 0;
-    
-}
-footer  p {
-    margin:0;
-    text-align: center;
-}
-footer div i {
-    bottom: 0;
-    font-size: 1.5rem;
-    margin: 0.5em;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.36);
-}
-footer div i:hover{
-    color: rgba(0, 0, 0, 0.70);
 }
 
-/* 
-    Responsive Main Pris en compte pour Ã©cran avec largeur infÃ©rieure Ã  428px
-*/
-@media (max-width:428px){
-    footer  p {
-        font-size: 0.8em;
+main div#slide_1 h1 {
+    align-self: end;
+    font-size: 20vmin;
+    font-style: italic;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+main div#slide_1 p {
+    align-self: start;
+    text-align: center;
+    font-size: 5vmin;
+    color: black;
+}
+/* ---------------------------------------------------------------------- *\
+                            Fixed Main Slide 2 Style
+\* ---------------------------------------------------------------------- */
+main div#slide_2 {
+    background-color: white;
+}
+
+
+/* ---------------------------------------------------------------------- *\
+                            Fixed Main Slide 3 Style
+\* ---------------------------------------------------------------------- */
+main div#slide_3 {
+    background-color: #EEEEEE;
+    grid-template-columns: 2fr 1fr;
+}
+main div#slide_3 img {
+    grid-column: 2;
+    grid-row: 1;
+}
+/* ---------------------------------------------------------------------- *\
+                            Responsive Main Slide 3 Style
+\* ---------------------------------------------------------------------- */
+
+@media (max-width: 1070px) {
+    main div#slide_3 {
+        grid-template-columns: 1fr;
     }
-    footer div i{
-        font-size: 1em;
+    main div#slide_3 img {
+        grid-column: 1;
     }
+}
+/* ---------------------------------------------------------------------- *\
+                            Fixed Main Slide 4 Style
+\* ---------------------------------------------------------------------- */
+main div#slide_4{
+    grid-template-columns: 1fr 1fr;
+
+}
+main div#slide_4 div#iframe_map {
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1.5px solid rgba(0, 0, 0, .125);
+    width: 60vmin;  height: 45vmin;
+}
+main div#slide_4 iframe {
+    width: 100%; height: 100%;
+}
+main div#slide_4 form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1vmin;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+}
+
+main div#slide_4 form input,
+main div#slide_4 form textarea {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: white;
+    border-radius: 10px;
+    border: 0.25vmin solid rgba(0, 0, 0, .125);
+    cursor: pointer;
+    font: 4vmin "Century Gothic";
+    width: 100%;
+    height: 100%;
+}
+main div#slide_4 form textarea {
+    text-align: justify;
+    padding: 1vmin;
+    width: calc(100% - 2vmin);
+    height: calc(100% - 2vmin);
+}
+main div#slide_4 form input::placeholder,
+main div#slide_4 form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+main div#slide_4 form input[type=submit] {
+    background-color: #eeeeee;
+    width: 50%;
+    justify-self: end;
+}
+/* ---------------------------------------------------------------------- *\
+                            Responsive Main Slide 4 Style
+\* ---------------------------------------------------------------------- */
+@media (max-width: 1070px){
+    main div#slide_4{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100%;
+    }
+    main div#slide_4 form {
+        height: 100%;
+    }
+    main div#slide_4 div#iframe_map {
+        display: none;
+    }
+    main div#slide_4 form input[type=submit] {
+        height: 50%;
+    }
+}
+/* ---------------------------------------------------------------------- *\
+                            Fixed Footer Style
+\* ---------------------------------------------------------------------- */
+footer {
+    align-self: flex-end;
+    background-color: #EEEEEE;
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c c";
+}
+
+footer div#footer_partner {
+    justify-self: start;
+    grid-area: a;
+
+}
+
+footer div#footer_communication {
+    justify-self: end;
+    grid-area: b;
+}
+footer div#footer_legality {
+    justify-self: center;
+    grid-area: c;
 
 }
