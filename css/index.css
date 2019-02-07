@@ -18,7 +18,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    width: 100vw;
+    max-width: 100vw;
 }
 
 
@@ -74,6 +74,7 @@ header nav ul#nav_link li#current {
 main {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
 }
 
 main div.slide_to_slide_white_background div.slide_to_slide_white,
@@ -107,7 +108,7 @@ main div.slide {
     height: calc(100vh - 45px - 4px - 5vh - 40px);
     justify-items: center;
     align-items: center;
-    padding: 20px 40px 40px 40px;
+    padding: 20px 20px 20px 40px;
 
 }
 
@@ -220,7 +221,7 @@ main div#slide_4 form {
     grid-row-gap: 1vmin;
     align-items: center;
     justify-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 main div#slide_4 form input,
@@ -241,9 +242,13 @@ main div#slide_4 form textarea {
     width: calc(100% - 2vmin);
     height: calc(100% - 2vmin);
 }
+main div#slide_4 form input::placeholder,
+main div#slide_4 form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+}
 
 main div#slide_4 form input[type=submit] {
-    background-color: rgba(92, 218, 176, 0.15);
+    background-color: #eeeeee;
     width: 50%;
     justify-self: end;
 }
@@ -265,56 +270,30 @@ main div#slide_4 form input[type=submit] {
         height: 50%;
     }
 }
-/*  
-    Footer
-*/
+/* ---------------------------------------------------------------------- *\
+                            Fixed Footer Style
+\* ---------------------------------------------------------------------- */
 footer {
     align-self: flex-end;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2em 0 1em 0;
     background-color: #EEEEEE;
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c c";
 }
 
-footer div#footer_1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;
-}
-
-footer div#footer_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2rem;
-}
-
-footer div#footer_nav2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+footer div#footer_partner {
+    justify-self: start;
+    grid-area: a;
 
 }
 
-footer p {
-    margin: 0;
-    text-align: center;
+footer div#footer_communication {
+    justify-self: end;
+    grid-area: b;
 }
+footer div#footer_legality {
+    justify-self: center;
+    grid-area: c;
 
-footer div i {
-    bottom: 0;
-    font-size: 1.5rem;
-    margin: 0.5em;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.36);
-}
-
-footer div i:hover {
-    color: rgba(0, 0, 0, 0.70);
 }
