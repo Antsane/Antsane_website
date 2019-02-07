@@ -128,6 +128,7 @@ main p {
     main div.slide {
         grid-template-columns: 1fr;
         grid-template-rows: 40% 60%;
+        padding: 20px 20px 40px 20px;
     }
     main img {
         width: 30vmin;
@@ -213,31 +214,13 @@ main div#slide_4 div#iframe_map {
 main div#slide_4 iframe {
     width: 100%; height: 100%;
 }
-
-main div#slide_4 div#center_form {
-    overflow: hidden;
-    background-color: white;
-    box-sizing: border-box;
-    border: 1.5px solid rgba(0, 0, 0, .125);
-    border-radius: 20px;
-    width: 60vmin; height: 45vmin;
-}
-
-main div#slide_4 div#title_form {
-    padding: 2vmin;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgba(0, 0, 0, .125);
-    font: 3vmin "Century Gothic";
-    background-color: rgb(241, 241, 241);
-}
-
 main div#slide_4 form {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 1vmin;
     align-items: center;
     justify-items: center;
-    margin: 2vmin;
+    width: 100%;
 }
 
 main div#slide_4 form input,
@@ -245,35 +228,38 @@ main div#slide_4 form textarea {
     text-align: center;
     color: rgba(0, 0, 0, 0.6);
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 0.25vmin solid rgba(0, 0, 0, .125);
     cursor: pointer;
-    font: 2.7vmin "Century Gothic";
-    width: 98%;
+    font: 100% "Century Gothic";
+    width: 100%;
+    height: 100%;
 }
 main div#slide_4 form textarea {
     text-align: justify;
     padding: 1vmin;
-    width: calc(98% - 1vmin);
+    width: calc(100% - 2vmin);
+    height: calc(100% - 2vmin);
 }
 
 main div#slide_4 form input[type=submit] {
     background-color: rgba(92, 218, 176, 0.15);
-    width: 49%;
+    width: 50%; height: 50%;
     justify-self: end;
 }
+/* ---------------------------------------------------------------------- *\
+                            Responsive Main Slide 4 Style
+\* ---------------------------------------------------------------------- */
 @media (max-width: 1070px){
     main div#slide_4{
         grid-template-columns: 1fr;
         grid-template-rows: 100%;
     }
-
+    main div#slide_4 form {
+        height: 100%;
+    }
     main div#slide_4 div#iframe_map {
         display: none;
-    }
-    main div#slide_4 div#center_form {
-
-        width: 80vmin;
     }
 }
 /*  
