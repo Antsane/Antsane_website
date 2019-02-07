@@ -108,7 +108,7 @@ main div.slide {
     height: calc(100vh - 45px - 4px - 5vh - 40px);
     justify-items: center;
     align-items: center;
-    padding: 20px 20px 40px 20px;
+    padding: 20px;
 
 }
 
@@ -129,7 +129,6 @@ main div.slide p {
     main div.slide {
         grid-template-columns: 1fr;
         grid-template-rows: 40% 60%;
-        padding: 20px 20px 40px 20px;
     }
     main div.slide img {
         width: 30vmin;
@@ -147,7 +146,7 @@ main div.slide p {
 \* ---------------------------------------------------------------------- */
 main div#slide_1 {
     grid-template-columns: 1fr;
-    height: calc(100vh - 45px - 4px - 5vh - 60px);
+    height: calc(100vh - 45px - 5vh - 4px - 60px);
     background: no-repeat center / cover url(../img/photo_slide1.1.jpg);
     border-bottom: 4px #eeeeee solid;
     margin: 0;
@@ -369,5 +368,10 @@ footer div#footer_legality ul li a:hover {
     
     footer div#footer_social_network {
         justify-self: center;
+    }
+}
+@media (max-width: 430px){
+    footer{
+        font-size: 0.68em;
     }
 }
