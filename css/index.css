@@ -139,6 +139,12 @@ main div.slide p {
         font-size: 4vmin;
     }
 }
+@media (max-width: 700px){
+    main div.slide img {
+        height: 70%;
+    }
+
+}
 
 /* ---------------------------------------------------------------------- *\
                             Fixed Main Slide 1 Style
