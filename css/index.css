@@ -76,7 +76,6 @@ header nav ul#nav_link li a div#current {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    width: 100vw;
 }
 
 main div.slide_to_slide_white_background div.slide_to_slide_white,
