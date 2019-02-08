@@ -13,13 +13,12 @@
     resize: none;
     color: rgba(0, 0, 0, 0.5);
     font-family: "Century Gothic";
+    max-width: 100%;
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr;
-    height: 100vh;
-    background-color: red;
 }
 
 
@@ -34,7 +33,6 @@ header {
     height: 41px;
     background-color: #fff;
     border-bottom: 4px solid #eeeeee;
-    width: 100%;
 }
 
 header nav {
