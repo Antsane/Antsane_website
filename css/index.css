@@ -155,6 +155,11 @@ main div.slide p {
         font-size: 1.1em
      }
 }
+@media (max-width: 458px) {
+    main div.slide p {
+        font-size: 0.95em
+     }
+}
 
 
 
