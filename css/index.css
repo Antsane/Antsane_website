@@ -115,62 +115,30 @@ main div.slide {
 }
 
 main div.slide img {
-    height: 60%;
+    height: 50vmin;
 }
 
 main div.slide p {
     text-align: justify;
-    font-size: 1.8em;
+    font-size: 4.5vmin;
     margin: 0 20px;
 }
-
-
 /* ---------------------------------------------------------------------- *\
                             Responsive Main Style
 \* ---------------------------------------------------------------------- */
-
-@media (max-width: 1263px) {
-    main div.slide img {
-        height: 45%;
-    }
-
-    main div.slide p {
-        font-size: 1.5em
-    }
-}
-
-@media (max-width: 1163px) {
+@media (max-width: 1367px){
     main div.slide {
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
+        grid-row-gap: 10px;
     }
-
     main div.slide img {
-        height: 70%;
+        height: 100%;
     }
-
     main div.slide p {
-        margin: 0;
-    }
-
-    main div.slide p {
-        font-size: 1.3em
+        font-size: 4vmin;
     }
 }
-
-@media (max-width: 570px) {
-    main div.slide img {
-        
-    }
-
-    main div.slide p {
-        font-size: 0.9em
-    }
-}
-
-
-
-
 
 /* ---------------------------------------------------------------------- *\
                             Fixed Main Slide 1 Style
@@ -212,7 +180,7 @@ main div#slide_2 {
 \* ---------------------------------------------------------------------- */
 main div#slide_3 {
     background-color: #EEEEEE;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 main div#slide_3 img {
@@ -224,7 +192,7 @@ main div#slide_3 img {
                             Responsive Main Slide 3 Style
 \* ---------------------------------------------------------------------- */
 
-@media (max-width: 1163px) {
+@media (max-width: 1367px) {
     main div#slide_3 {
         grid-template-columns: 1fr;
     }
