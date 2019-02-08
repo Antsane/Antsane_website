@@ -325,6 +325,9 @@ main div#slide_4 form input[type=submit] {
 
         font-size: 1em;
     }
+    main div#slide_4 form input[type=submit] {
+        height: 50%;
+    }
 
 }
 
