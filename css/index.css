@@ -211,7 +211,25 @@ main div#slide_3 img {
     grid-column: 2;
     grid-row: 1;
 }
-
+div#more_detail_about_team {
+    background-color: #eeeeee;
+}
+div#more_detail_about_team  article {
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c c"
+    "d d";
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    padding: 10px;
+}
+div#more_detail_about_team div.developer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
 /* ---------------------------------------------------------------------- *\
                             Responsive Main Slide 3 Style
 \* ---------------------------------------------------------------------- */
