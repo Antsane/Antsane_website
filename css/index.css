@@ -21,7 +21,6 @@ body {
     grid-template-columns: 1fr;
 }
 
-
 /* ---------------------------------------------------------------------- *\
                             Fixed Header Style
 \* ---------------------------------------------------------------------- */
@@ -31,7 +30,7 @@ header {
     right: 0;
     top: 0;
     height: 41px;
-    background-color: #fff;
+    background-color: white;
     border-bottom: 4px solid #eeeeee;
 }
 
@@ -57,6 +56,7 @@ header nav ul#nav_social_network {
     place-items: center;
 }
 
+
 /* ---------------------------------------------------------------------- *\
                             Animated Header Style
 \* ---------------------------------------------------------------------- */
@@ -71,6 +71,7 @@ header nav ul#nav_link li a div#current {
 /* ---------------------------------------------------------------------- *\
                             Fixed Main Style
 \* ---------------------------------------------------------------------- */
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -123,35 +124,40 @@ main div.slide p {
     font-size: 4.5vmin;
     margin: 0 20px;
 }
+
 /* ---------------------------------------------------------------------- *\
                             Responsive Main Style
 \* ---------------------------------------------------------------------- */
-@media (max-width: 1367px){
+@media (max-width: 1367px) {
     main div.slide {
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
         grid-row-gap: 10px;
     }
+
     main div.slide img {
         height: 100%;
     }
+
     main div.slide p {
         font-size: 4vmin;
     }
 }
-@media (max-width: 1200px){
+
+@media (max-width: 1200px) {
 
     main div.slide p {
         font-size: 3.5vmin;
     }
 }
-@media (max-width: 700px){
+
+@media (max-width: 700px) {
     main div.slide img {
         height: 70%;
     }
-    
-    @media (max-width: 550px){
-    
+
+    @media (max-width: 550px) {
+
         main div.slide p {
             font-size: 4vmin;
         }
