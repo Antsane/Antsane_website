@@ -262,6 +262,7 @@ div#more_detail_about_project article div.img_and_description_project img {
 
 div#more_detail_about_project article div.img_and_description_project h2 {
     text-align: center;
+    padding: 0;
 }
 
 div#more_detail_about_project article p {
@@ -278,12 +279,12 @@ div#more_detail_about_project article ul#team_wich_work_on_project {
 div#more_detail_about_project article h2,
 div#more_detail_about_project article p,
 div#more_detail_about_project article ul#team_wich_work_on_project {
-    padding: 5px 10px;
+    padding: 0px 10px;
 }
 
 
 div#more_detail_about_project article ul#team_wich_work_on_project a img {
-    margin: 5px;
+    margin: 0 5px;
     background-color: rgb(226, 226, 226);
     border-radius: 50%;
     height: 30px;
@@ -306,13 +307,29 @@ div#more_detail_about_project article ul#team_wich_work_on_project a img:hover {
     div#more_detail_about_project article ul#team_wich_work_on_project a img {
         filter: none;
     }
+    div#more_detail_about_project h1 {
+        display: none;
+    }
+    div#more_detail_about_project div.project_type {
+        margin-top: 25px;
+    }
 }
 
 @media (max-width: 550px) {
-
     div#more_detail_about_project article {
         width: 90vw;
     }
+    div#more_detail_about_project article div.img_and_description_project {
+        grid-template-columns: 1fr;
+    }
+    div#more_detail_about_project article div.img_and_description_project img {
+        display: none;
+    }
+    div#more_detail_about_project article h2,
+div#more_detail_about_project article p,
+div#more_detail_about_project article ul#team_wich_work_on_project {
+    padding: 5px 10px;
+}
 }
 
 /* ---------------------------------------------------------------------- *\
