@@ -36,6 +36,7 @@ header {
     height: 41px;
     background-color: white;
     border-bottom: 4px solid #eeeeee;
+    z-index: 2;
 }
 
 header nav {
@@ -269,6 +270,7 @@ div#more_detail_about_team article img {
     width: 130px;
     height: 130px;
     transform: translate(calc(35% + 10px), calc(-35% - 10px));
+    z-index: 1;
 }
 
 div#more_detail_about_team article p {
