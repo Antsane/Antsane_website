@@ -47,7 +47,7 @@ header nav {
 header nav ul#nav_link {
     justify-self: start;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 10px;
     place-items: center;
 }
@@ -72,6 +72,11 @@ header nav ul#nav_link li a div#current {
 /* ---------------------------------------------------------------------- *\
                             Responsive Header Style
 \* ---------------------------------------------------------------------- */
+@media (max-width: 450px){
+    header nav ul#nav_social_network {
+        display: none;
+    }
+}
 /* ---------------------------------------------------------------------- *\
                             Fixed Main Style
 \* ---------------------------------------------------------------------- */
