@@ -20,9 +20,11 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
-span{
+
+span {
     font-weight: bold;
 }
+
 /* ---------------------------------------------------------------------- *\
                             Fixed Header Style
 \* ---------------------------------------------------------------------- */
@@ -213,51 +215,69 @@ main div#slide_3 img {
     grid-column: 2;
     grid-row: 1;
 }
+
 /* ------------------------------------------- *\
             Fixed Team Part
 \* ------------------------------------------- */
+div#more_detail_about_team h1 {
+    text-align: center;
+    margin: 40px;
+}
+
 div#more_detail_about_team div.developer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 50px;
+    grid-row-gap: 60px;
     justify-items: center;
     padding: 10px;
 }
+
 div#more_detail_about_team {
     background-color: #eeeeee;
 }
+
 div#more_detail_about_team article {
     display: grid;
-    grid-template-areas: 
-    "a b"
-    "c c"
-    ". d";
-
-    /*do the grid area boy */
+    grid-template-areas:
+        "a b"
+        "c c"
+        "d d";
     background-color: white;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
     padding: 10px;
-    width: 50%;
+    width: 700px;
+    margin-right: 30px;
 }
 
-div#more_detail_about_team article h1 {
+div#more_detail_about_team article h2 {
     grid-area: a;
 }
+
+div#more_detail_about_team article div.div_img {
+    grid-area: b;
+    height: 63px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 div#more_detail_about_team article img {
     border-radius: 50%;
-    width: 10%;
-    transform: translate(calc(50% + 10px), calc(-50% - 10px));
-    justify-self: right;
+    width: 130px;
+    height: 130px;
+    transform: translate(calc(35% + 10px), calc(-35% - 10px));
 }
+
 div#more_detail_about_team article p {
     grid-area: c;
+    margin: 0 0 15px 0;
 }
+
 div#more_detail_about_team article ul#team_social_network {
     justify-self: right;
     display: flex;
     flex-direction: row;
     grid-area: d;
 }
+
 div#more_detail_about_team article ul#team_social_network li {
     display: flex;
     justify-content: center;
@@ -265,33 +285,96 @@ div#more_detail_about_team article ul#team_social_network li {
     margin: 5px;
     background-color: rgb(226, 226, 226);
     border-radius: 50%;
-    height: 30px; width: 30px;
+    height: 30px;
+    width: 30px;
 }
-div#more_detail_about_team article ul#team_social_network li i{
+
+div#more_detail_about_team article ul#team_social_network li i {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
+    padding: 8px 15px;
 }
+
 /* ------------------------------------------- *\
             Animated Team Part
 \* ------------------------------------------- */
-div#more_detail_about_team article ul#team_social_network li#linkedin_background:hover {
-    background-color: #0077b5; 
+div#more_detail_about_team article ul#team_social_network li#cv_background:hover {
+    background-color: rgb(243, 204, 181);
 }
+
+div#more_detail_about_team article ul#team_social_network li#linkedin_background:hover {
+    background-color: #0077b5;
+}
+
 div#more_detail_about_team article ul#team_social_network li#envelope_background:hover {
     background-color: #0075c8;
 }
+
 div#more_detail_about_team article ul#team_social_network li#phone_background:hover {
     background-color: #65c52e;
 }
+
 div#more_detail_about_team article ul#team_social_network li#website_background:hover {
     background-color: rgb(243, 0, 0);
 }
-div#more_detail_about_team article ul#team_social_network  i:hover {
+
+div#more_detail_about_team article ul#team_social_network i:hover {
     color: white;
 }
-
+/* ------------------------------------------- *\
+            Responsive Team Part
+\* ------------------------------------------- */
+@media only screen and (max-device-width: 1900px) and (min-device-width: 0px) {
+    div#more_detail_about_team article ul#team_social_network li#cv_background {
+        background-color: rgb(243, 204, 181);
+    }
+    
+    div#more_detail_about_team article ul#team_social_network li#linkedin_background {
+        background-color: #0077b5;
+    }
+    
+    div#more_detail_about_team article ul#team_social_network li#envelope_background {
+        background-color: #0075c8;
+    }
+    
+    div#more_detail_about_team article ul#team_social_network li#phone_background {
+        background-color: #65c52e;
+    }
+    
+    div#more_detail_about_team article ul#team_social_network li#website_background {
+        background-color: rgb(243, 0, 0);
+    }
+    
+    div#more_detail_about_team article ul#team_social_network i {
+        color: white;
+    }
+}
+@media (max-width: 850px){
+    div#more_detail_about_team article {
+        width: 500px;
+    }
+}
+@media (max-width: 650px){
+    div#more_detail_about_team article {
+        width: 300px;
+    }
+    div#more_detail_about_team article h2 {
+       font-size: 1.1em;
+    }
+    div#more_detail_about_team article img {
+       height: 110px; width: 110px;
+    }
+}
+@media (max-width: 385px){
+    div#more_detail_about_team article {
+        width: 240px;
+        margin-left: 10px;
+    }
+    div#more_detail_about_team article img {
+       height: 86px; width: 86px;
+    }
+}
 /* ---------------------------------------------------------------------- *\
                             Responsive Main Slide 3 Style
 \* ---------------------------------------------------------------------- */
@@ -424,7 +507,8 @@ footer div.footer_communication {
     align-items: center;
 
 }
-footer div.footer_communication div.footer_title_communication{
+
+footer div.footer_communication div.footer_title_communication {
     justify-self: center;
 }
 
