@@ -74,9 +74,13 @@ header nav ul#nav_link li a div#current {
                             Responsive Header Style
 \* ---------------------------------------------------------------------- */
 @media (max-width: 450px){
+    header nav {
+        grid-template-columns: 1fr;
+    }
     header nav ul#nav_social_network {
         display: none;
     }
+
 }
 /* ---------------------------------------------------------------------- *\
                             Fixed Main Style
