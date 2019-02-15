@@ -563,7 +563,7 @@ main div#slide_4 iframe {
 main div#slide_4 form {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 10px;
+    grid-row-gap: 5px;
     align-items: center;
     justify-items: center;
     width: 90%;
@@ -579,7 +579,7 @@ main div#slide_4 form textarea {
     cursor: pointer;
     font: 2em "Century Gothic";
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 main div#slide_4 form textarea {
@@ -598,6 +598,7 @@ main div#slide_4 form input[type=submit] {
     background-color: #eeeeee;
     color: rgba(0, 0, 0, 0.4);
     width: 50%;
+    height: 100%;
     justify-self: end;
 }
 
