@@ -50,9 +50,10 @@ header nav {
 header nav ul#nav_link {
     justify-self: start;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 10px;
-    place-items: center;
+    justify-items: center;
+    align-items: center;
 }
 
 header nav ul#nav_social_network {
@@ -542,6 +543,7 @@ div#more_detail_about_team article ul#team_social_network i:hover {
 \* ---------------------------------------------------------------------- */
 main div#slide_4 {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
 }
 
 main div#slide_4 div#iframe_map {
